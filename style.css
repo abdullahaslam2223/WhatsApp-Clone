@@ -1,5 +1,6 @@
 :root {
   --gray: #f0f2f5;
+  --icon-gray: rgb(84, 101, 111);
 }
 
 * {
@@ -25,6 +26,11 @@
   align-items: center;
 }
 
+.profile-icon .icon {
+  color: gray;
+  font-size: 38px !important;
+}
+
 i.icon {
   cursor: pointer;
 }
@@ -33,6 +39,10 @@ i.icon {
   width: 200px;
   display: flex;
   justify-content: space-between;
+}
+
+.primary-icons .icon {
+  color: var(--icon-gray);
 }
 
 #right {
