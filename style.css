@@ -1,0 +1,42 @@
+:root {
+  --gray: #f0f2f5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+#left {
+  width: 30%;
+  height: 100vh;
+}
+
+#topbar {
+  background-color: var(--gray);
+  height: 25px;
+  padding: 20px 30px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+i.icon {
+  cursor: pointer;
+}
+
+.primary-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#right {
+  width: 70%;
+  height: 100vh;
+  background-color: green;
+}
