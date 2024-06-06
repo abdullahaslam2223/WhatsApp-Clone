@@ -15,6 +15,7 @@
 
 i.icon {
   cursor: pointer;
+  color: var(--icon-gray);
 }
 
 #left-bar {
@@ -38,11 +39,15 @@ i.icon {
 }
 
 #left {
-  width: 35%;
+  width: 33%;
+}
+
+header.chats-header {
+  padding-bottom: 10px;
+  border-bottom: var(--gray) 1px solid;
 }
 
 #topbar {
-  /* background-color: var(--gray); */
   height: 25px;
   padding: 20px 30px 20px 15px;
   display: flex;
@@ -62,12 +67,34 @@ i.icon {
   justify-content: space-between;
 }
 
-.primary-icons .icon {
-  color: var(--icon-gray);
+.search-filter {
+  position: relative;
+}
+
+.search-filter .icon:first-child {
+  position: absolute;
+  top: 11px;
+  left: 28px;
+  font-size: 14px;
+}
+
+.chats-header .search-filter input {
+  width: 75%;
+  margin: 0 5px 0 15px;
+  height: 35px;
+  font-size: 13px;
+  background-color: var(--gray);
+  border: none;
+  border-radius: 10px;
+  padding: 0 0 0 60px;
+}
+
+.chats-header .search-filter input:focus {
+  outline: none;
 }
 
 #right {
-  width: 61%;
+  width: 63%;
   height: 100vh;
   background-color: var(--gray);
 }
