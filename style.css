@@ -139,6 +139,9 @@ header.chats-header {
 
 #right {
   width: 63%;
-  height: 100vh;
   background-color: var(--gray);
+  background-image: url("./img/default-image.png");
+  background-repeat: no-repeat;
+  background-size: 400px 350px;
+  background-position: center;
 }
