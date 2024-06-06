@@ -113,6 +113,7 @@ header.chats-header {
   display: flex;
   padding: 5px;
   position: relative;
+  border-bottom: 1px var(--gray) solid;
 }
 
 .chats .chat-item:hover {
