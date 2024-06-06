@@ -8,6 +8,22 @@
   margin: 0;
 }
 
+h1 {
+  font-family: monospace;
+}
+
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
 .container {
   display: flex;
   height: 98vh;
@@ -91,6 +107,33 @@ header.chats-header {
 
 .chats-header .search-filter input:focus {
   outline: none;
+}
+
+.chats .chat-item {
+  display: flex;
+  padding: 5px;
+  position: relative;
+}
+
+.chats .chat-item:hover {
+  background-color: var(--gray);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.chats .chat-item .no-profile {
+  width: 65px;
+  height: 65px;
+}
+
+.chats .chat-item .texts {
+  margin: 13px 0 0 5px;
+}
+
+.chats .chat-item .message-date {
+  position: absolute;
+  right: 20px;
+  top: 22px;
 }
 
 #right {
