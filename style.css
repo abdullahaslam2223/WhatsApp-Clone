@@ -8,6 +8,11 @@
   margin: 0;
 }
 
+html,
+body {
+  overflow-y: hidden;
+}
+
 h1 {
   font-family: monospace;
 }
@@ -26,7 +31,7 @@ p {
 
 .container {
   display: flex;
-  height: 98vh;
+  height: 100vh;
 }
 
 i.icon {
@@ -41,6 +46,7 @@ i.icon {
   flex-direction: column;
   align-items: center;
   padding-top: 35px;
+  padding-bottom: 20px;
   justify-content: space-between;
 }
 
@@ -109,32 +115,41 @@ header.chats-header {
   outline: none;
 }
 
-.chats .chat-item {
+#chats {
+  height: 85vh;
+  overflow-y: auto;
+}
+
+#chats .chat-item {
   display: flex;
   padding: 5px;
   position: relative;
   border-bottom: 1px var(--gray) solid;
 }
 
-.chats .chat-item:hover {
+#chats .chat-item:hover {
   background-color: var(--gray);
   cursor: pointer;
   transition: 0.1s;
 }
 
-.chats .chat-item .no-profile {
+#chats .chat-item .no-profile {
   width: 65px;
   height: 65px;
 }
 
-.chats .chat-item .texts {
+#chats .chat-item .texts {
   margin: 13px 0 0 5px;
 }
 
-.chats .chat-item .message-date {
+#chats .chat-item .texts p {
+  margin-top: 1px;
+}
+
+#chats .chat-item .message-date {
   position: absolute;
   right: 20px;
-  top: 22px;
+  top: 18px;
 }
 
 #right {
