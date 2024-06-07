@@ -69,8 +69,6 @@ const chats = [
 
 const chatContainer = document.getElementById("chats");
 
-console.log(chatContainer);
-
 chats.forEach((chat) => {
   const section = document.createElement("section");
   section.classList.add("chat-item");
@@ -106,3 +104,10 @@ chats.forEach((chat) => {
 
   chatContainer.appendChild(section);
 });
+
+const toggle_filter = () => {
+  const chat_dropdown = document.getElementsByClassName("chat-dropdown");
+  chat_dropdown[0].classList.contains("chat-dropdown-visible")
+    ? chat_dropdown[0].classList.remove("chat-dropdown-visible")
+    : chat_dropdown[0].classList.add("chat-dropdown-visible");
+};

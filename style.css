@@ -32,6 +32,7 @@ p {
 .container {
   display: flex;
   height: 100vh;
+  position: relative;
 }
 
 i.icon {
@@ -159,4 +160,34 @@ header.chats-header {
   background-repeat: no-repeat;
   background-size: 400px 350px;
   background-position: center;
+}
+
+.chat-dropdown {
+  background-color: white;
+  color: var(--icon-gray);
+  position: absolute;
+  top: 94px;
+  left: 524px;
+  padding: 15px 0;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.chat-dropdown h3 {
+  margin: 0 0 6px 20px;
+}
+
+.chat-dropdown ul li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 8px 25px;
+}
+
+.chat-dropdown ul li:hover {
+  transition: 0.1s;
+  background-color: var(--gray);
+}
+
+.chat-dropdown-visible {
+  display: block;
 }

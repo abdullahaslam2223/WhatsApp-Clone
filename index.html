@@ -41,12 +41,25 @@
           <div class="search-filter">
             <i class="fas fa-search search-icon icon"></i>
             <input type="text" class="search" placeholder="Search" />
-            <i class="fa-solid fa-filter icon"></i>
+            <i
+              class="fa-solid fa-filter icon"
+              id="chats-filter"
+              onclick="toggle_filter()"
+            ></i>
           </div>
         </header>
         <section id="chats"></section>
       </div>
       <div id="right"></div>
+      <div class="chat-dropdown">
+        <h3>Chats</h3>
+        <ul>
+          <li>Unread chats</li>
+          <li>Contacts</li>
+          <li>Non-contacts</li>
+          <li>Groups</li>
+        </ul>
+      </div>
     </div>
 
     <script src="./script.js"></script>
